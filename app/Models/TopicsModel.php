@@ -17,8 +17,8 @@ class TopicsModel extends Model
         return $this->findAll();
     }
 
-    public function getTopic($id)
+    public function getTopicById($id)
     {
-        return $this->where('id', $id)->first();
+        return $this->where('id', $id)->findAll();
     }
 }
