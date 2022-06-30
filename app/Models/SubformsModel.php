@@ -12,8 +12,8 @@ class SubformsModel extends Model
     protected $returnType       = 'array';
     protected $allowedFields    = ["question", "type", "topic_id"];
 
-    public function getSubformsByTopic($id)
+    public function getSubformsByTopicId($id)
     {
-        return $this->select("subforms.*, topics.name")->join("topics", "topics.id=subforms.topics_id")->where("topics_id", $id)->findAll();
+        return $this->where("topics_id", $id)->findAll();
     }
 }
