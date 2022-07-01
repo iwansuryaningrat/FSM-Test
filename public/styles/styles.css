@@ -1,0 +1,51 @@
+.bg-gradient {
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+}
+
+.btn-blue {
+    background: #00B4DB;
+    border: none;
+}
+
+.btn-red {
+    background: #fb4c49;
+    border: none;
+}
+
+.btn-green {
+    background: #00b03b;
+    border: none;
+}
+
+.btn-green:hover {
+    background: #088e1c;
+}
+
+.btn-red:hover {
+    background: #b72421;
+}
+
+.btn-blue:hover {
+    background: #0083B0;
+    border: none;
+}
+
+.bg-white {
+    background: #E9E9E9;
+}
+
+.text-white {
+    color: #E9E9E9;
+}
+
+.rounded {
+    border-radius:.80rem!important
+}
+
+hr {
+    border-top: 1px solid #00B4DB;
+    border-radius: 4px;
+}
