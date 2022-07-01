@@ -25,16 +25,13 @@ class Home extends BaseController
 
     public function index()
     {
-        // $topics = $this->topicsModel->getAllTopics();
-        // $responses = $this->responsesModel->getAllResponses();
-        // dd($responses);
-        // $data = [
-        //     'title' => 'Daftar Topics',
-        //     'topics' => $topics
-        // ];
+        $topics = $this->topicsModel->getAllTopics();
+        $data = [
+            'title' => 'Topics',
+            'topics' => $topics
+        ];
 
-        // return view('home', $data);
-        return view('index');
+        return view('index', $data);
     }
 
     public function responses()
